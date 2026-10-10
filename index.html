@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f5">
+  <meta name="description" content="Undangan pernikahan digital — sebuah awal dari selamanya.">
+  <title>Undangan Pernikahan — Syaefudin & Nessa </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="weddingMusic" loop preload="none">
+    <!-- Ganti musik.mp3 dengan file musik milik Anda yang sudah memiliki izin penggunaan. -->
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="cover" id="home">
+      <div class="cover-shade"></div>
+      <div class="cover-content">
+        <p class="eyebrow">THE WEDDING OF</p>
+        <h1 class="cover-names">Alya <span>&amp;</span> Arkan</h1>
+        <div class="silver-line"></div>
+        <p class="cover-date">SABTU, 20 MARET 2027</p>
+        <p class="cover-note">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+        <p class="guest-name" id="guestName">Tamu Undangan</p>
+        <button class="button button-light" id="openInvitation">Buka Undangan <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="cover-bottom">DENGAN PENUH CINTA, KAMI MENGUNDANG ANDA</div>
+    </section>
+
+    <section class="intro section-pad" id="intro">
+      <p class="eyebrow">ASSALAMUALAIKUM WARAHMATULLAHI WABARAKATUH</p>
+      <div class="ornament">✧</div>
+      <h2>Sebuah Awal<br><em>dari Selamanya</em></h2>
+      <p class="body-copy">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan kami. Merupakan kebahagiaan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.</p>
+      <p class="quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup...”</p>
+      <p class="quote-source">QS. Ar-Rum: 21</p>
+    </section>
+
+    <section class="couple section-pad">
+      <p class="eyebrow">TWO SOULS, ONE STORY</p>
+      <h2>Calon Mempelai</h2>
+      <div class="couple-grid">
+        <article class="person">
+          <div class="portrait portrait-one"><span>A</span></div>
+          <h3>Eneng Siti Sadiyah</h3>
+          <p>Putri ketiga dari</p>
+          <p class="family">Bapak Dadang &amp; Ibu Siti</p>
+        </article>
+        <div class="ampersand">&amp;</div>
+        <article class="person">
+          <div class="portrait portrait-two"><span>A</span></div>
+          <h3>Syaefudin Asyhari</h3>
+          <p>Putra kedua dari</p>
+          <p class="family">Bapak Moh Hamdi &amp; Ibu Karwati(Alm)</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="event section-pad" id="acara">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2>Hari Bahagia Kami</h2>
+      <div class="event-date">
+        <span>SABTU</span><strong>20</strong><span>MARET 2027</span>
+      </div>
+      <div id="countdown" class="countdown" aria-label="Hitung mundur">
+        <div><strong id="days">00</strong><span>Hari</span></div>
+        <div><strong id="hours">00</strong><span>Jam</span></div>
+        <div><strong id="minutes">00</strong><span>Menit</span></div>
+        <div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+      <div class="event-cards">
+        <article class="event-card">
+          <span class="event-icon">01</span>
+          <h3>Akad Nikah</h3>
+          <p>Sabtu, 20 Maret 2027</p>
+          <p>08.00 – 10.00 WIB</p>
+          <p class="venue">Kediaman Mempelai Wanita</p>
+        </article>
+        <article class="event-card">
+          <span class="event-icon">02</span>
+          <h3>Resepsi</h3>
+          <p>Sabtu, 20 Maret 2027</p>
+          <p>11.00 – 14.00 WIB</p>
+          <p class="venue">Kediaman Mempelai Wanita</p>
+        </article>
+      </div>
+      <a class="button button-dark" id="mapLink" href="https://maps.google.com/?q=Kediaman+Mempelai+Wanita" target="_blank" rel="noopener">Lihat Lokasi di Google Maps ↗</a>
+    </section>
+
+    <section class="gallery section-pad" id="galeri">
+      <p class="eyebrow">MOMENTS OF US</p>
+      <h2>Galeri Cerita</h2>
+      <p class="section-subtitle">Beberapa potongan kecil dari cerita kami.</p>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-a" data-full="foto1.jpg" aria-label="Lihat foto 1"><img src="foto1.jpg" alt="Foto pasangan 1" onerror="this.style.display='none'"><span>01</span></button>
+        <button class="gallery-item gallery-b" data-full="foto2.jpg" aria-label="Lihat foto 2"><img src="foto2.jpg" alt="Foto pasangan 2" onerror="this.style.display='none'"><span>02</span></button>
+        <button class="gallery-item gallery-c" data-full="foto3.jpg" aria-label="Lihat foto 3"><img src="foto3.jpg" alt="Foto pasangan 3" onerror="this.style.display='none'"><span>03</span></button>
+        <button class="gallery-item gallery-d" data-full="foto4.jpg" aria-label="Lihat foto 4"><img src="foto4.jpg" alt="Foto pasangan 4" onerror="this.style.display='none'"><span>04</span></button>
+      </div>
+      <p class="hint">Ganti foto1.jpg sampai foto4.jpg dengan foto kalian. Jika belum ada foto, kotak galeri tetap tampil sebagai placeholder.</p>
+    </section>
+
+    <section class="rsvp section-pad" id="rsvp">
+      <p class="eyebrow">KINDLY RESPOND</p>
+      <h2>Konfirmasi Kehadiran</h2>
+      <p class="section-subtitle">Mohon isi konfirmasi berikut agar kami dapat menyambut Anda dengan baik.</p>
+      <form id="rsvpForm">
+        <label for="name">Nama lengkap</label>
+        <input id="name" name="name" type="text" placeholder="Masukkan nama Anda" required>
+        <label for="attendance">Konfirmasi kehadiran</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Pilih jawaban</option>
+          <option value="Hadir">Insyaallah hadir</option>
+          <option value="Tidak hadir">Mohon maaf, belum bisa hadir</option>
+        </select>
+        <label for="guests">Jumlah tamu</label>
+        <select id="guests" name="guests">
+          <option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option>
+        </select>
+        <label for="message">Ucapan dan doa</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tuliskan doa terbaik untuk kami..."></textarea>
+        <button class="button button-dark button-full" type="submit">Kirim Konfirmasi via WhatsApp ↗</button>
+        <p class="hint">Tombol ini akan membuka WhatsApp dengan pesan yang sudah disiapkan. Ganti nomor WhatsApp di file script.js sebelum membagikan undangan.</p>
+      </form>
+    </section>
+
+    <section class="closing section-pad">
+      <div class="ornament">✧</div>
+      <h2>Merupakan suatu kehormatan<br><em>bagi kami</em></h2>
+      <p class="body-copy">Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i, kami mengucapkan terima kasih.</p>
+      <p class="closing-names">Alya <span>&amp;</span> Arkan</p>
+      <p class="eyebrow">20 · 12 · 2026</p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigasi undangan">
+    <a href="#home">Home</a><a href="#acara">Acara</a><a href="#galeri">Galeri</a><a href="#rsvp">RSVP</a>
+    <button id="musicToggle" aria-label="Putar atau jeda musik">♫</button>
+  </nav>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">×</button>
+    <img id="lightboxImage" src="" alt="Foto galeri ukuran besar">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
